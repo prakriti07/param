@@ -24,8 +24,8 @@ stages:
 jobs:
   fast_finish: true
   include:
-    - arch: arm64
-      &default
+    - &default
+      arch: arm64
       stage: test
       python: 3.7
       env: TOX_ENV=py37
